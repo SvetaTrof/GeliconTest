@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #3E3E3E;
+}
+
+.block-table {
+  max-width: 1254px;
+  margin: 30px auto;
+}
+
+.table {
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.title-table {
+  max-width: 1254px;
+  margin: 0;
+  padding: 11px 12px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  background: #F4F7FB;
+  border: 1px solid #3E3E3E;
+  border-bottom: none;
+}
+
+.col {
+  background: #F4F7FB;
+}
+
+th {
+  padding: 17px 9px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  border: 1px solid #3E3E3E;
+}
+
+td {
+  padding: 11px 9px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  border: 1px solid #3E3E3E;
+  word-wrap: break-word;
+}
+
+.add-td {
+  padding: 6px 9px;
+}
+
+.add-link {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #0776C3;
+}
+
+.choices__inner {
+  max-width: 100%;
+  width: 100%;
+  min-height: auto;
+  padding: 11px 8px;
+  color: #3E3E3E;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  border: 1px solid #E1E1E1;
+  background: #ffffff;
+  border-radius: 6px;
+}
+
+.select-min .choices__inner {
+  max-width: 229px;
+}
+
+.choices__list--single {
+  padding: 0;
+}
+
+.choices__list--single .choices__item {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #3E3E3E;
+}
+
+.select-min .choices__list--single .choices__item {
+  max-width: 169px;
+}
+
+.choices[data-type*=select-one] .choices__inner {
+  padding-bottom: 5px;
+}
+
+.choices[data-type*=select-one]::after {
+  content: url("/img/Vector.svg");
+  right: 25px;
+  top: 35%;
+  border: none;
+  z-index: 2;
+}
+
+.choices[data-type*=select-one].is-open::after {
+  border: none;
+  margin-top:-2.5px
+}
+
+.choices.is-disabled .choices__inner {
+  background-color: #ffffff;
+  opacity: 0.5;
+}
+
+.choices[data-type*=select-one].is-disabled::after{
+  opacity: 0.3;
+}
+
+.itog {
+  font-weight: 700;
+}
+
+.action-menu {
+  padding: 0 6px;
+}
+
+.action-menu__link {
+  position: relative;
+}
+
+.action-menu__icon {
+  margin-right: 19px;
+}
+
+.action-menu__link::after {
+  content: url("/img/Vector.svg");
+  position: absolute;
+  top: -2px;
+}
